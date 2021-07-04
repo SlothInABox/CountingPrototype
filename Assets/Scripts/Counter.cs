@@ -6,18 +6,18 @@ using UnityEngine.UI;
 
 public class Counter : MonoBehaviour
 {
-    public Text CounterText;
+    public Text counterText;
 
-    private int Count = 0;
+    private int count = 0;
 
     private void Start()
     {
-        Count = 0;
+        count = 0;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        Count += 1;
-        CounterText.text = "Count : " + Count;
+        count += 1;
+        counterText.text = "Count : " + count;
     }
 }
